@@ -1,0 +1,10 @@
+{
+	"name": "pptx2pdf",
+	"image": "python:3.11",
+	"postCreateCommand": "/workspaces/pptx2pdf/.devcontainer/postCreateCommand.sh",
+	"mounts": [
+		// Replace "TARGETFOLDER" to the local path that has target pptx files.
+    // ex) "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/workspaces/pptx2pdf/mounted-folder,type=bind,consistency=cached"
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/Documents/test,target=/workspaces/pptx2pdf/mounted-folder,type=bind,consistency=cached"
+	]
+}
